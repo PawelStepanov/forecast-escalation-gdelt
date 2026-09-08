@@ -1,0 +1,5 @@
+country,forecast_week,horizon,target_type,predicted_value,predicted_prob,ci_lower,ci_upper,model
+Israel,2026-W36,1,count,5641.0,,2275.0,8512.25,last_value
+Israel,2026-W37,2,count,5302.4108092843935,,4403.253027064653,11543.430845572657,ridge_log_history
+Israel,2026-W38,3,count,5586.971172908307,,4289.303185604445,13936.783716791753,ridge_log_history
+Israel,2026-W39,4,count,5838.126179873242,,3713.399561868538,15010.521547867447,ridge_log_history

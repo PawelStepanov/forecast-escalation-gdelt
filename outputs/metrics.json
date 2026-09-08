@@ -1,0 +1,18 @@
+{
+  "country": "Israel",
+  "target": "weekly count of GDELT EventRootCode in {'18','19'}",
+  "forecast_origin_last_week": "2026-08-24",
+  "selected_models": {
+    "1": "last_value",
+    "2": "ridge_log_history",
+    "3": "ridge_log_history",
+    "4": "ridge_log_history"
+  },
+  "corrupted_weeks": [
+    "2025-06-09",
+    "2025-06-16",
+    "2025-06-23",
+    "2025-06-30"
+  ],
+  "secondary_diagnostic_large_rise_fraction": 0.2
+}

@@ -1,0 +1,8 @@
+services:
+  forecast:
+    build: .
+    image: forecast-escalation:latest
+    volumes:
+      - ./outputs:/app/outputs
+      - ./data/processed:/app/data/processed
+    command: ["sh", "-c", "pytest -q && python -m src.train --config config.yaml"]

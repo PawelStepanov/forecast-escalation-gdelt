@@ -1,0 +1,3 @@
+839746694a57d58f9426839ba3650eb27a52308b4d35713c9fe73053446c0514  data/raw/gdelt_gap_daily_check_2025-06-09_2025-07-06.csv
+630bb48efc2ca937bd44c07fb1cdbfb05e42cbd575089d9f23fcd6ef7dd9cce3  data/raw/gdelt_israel_weekly.csv
+f33af502ffb22118c7c4943809cc4c2b65050c5161793e4e0e2f7d910557d842  data/raw/world_bank_israel_annual.csv

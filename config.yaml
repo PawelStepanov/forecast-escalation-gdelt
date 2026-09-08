@@ -1,0 +1,43 @@
+project:
+  country_name: Israel
+  gdelt_country_code: IS
+  world_bank_country_code: ISR
+  random_state: 42
+
+data:
+  gdelt_csv: data/raw/gdelt_israel_weekly.csv
+  world_bank_csv: data/raw/world_bank_israel_annual.csv
+  processed_csv: data/processed/weekly_model_table.csv
+  download_date_gdelt: '2026-09-03'
+  download_date_world_bank: '2026-09-06'
+
+forecast:
+  horizons: [1, 2, 3, 4]
+  cv_weeks: 52
+  holdout_weeks: 12
+  prediction_interval_alpha: 0.10
+
+quality:
+  corrupted_week_starts:
+    - '2025-06-09'
+    - '2025-06-16'
+    - '2025-06-23'
+    - '2025-06-30'
+  max_feature_lookback_weeks: 12
+
+ridge:
+  alpha: 1.0
+
+xgboost:
+  n_estimators: 120
+  max_depth: 3
+  learning_rate: 0.03
+  subsample: 0.85
+  colsample_bytree: 0.85
+  min_child_weight: 4
+  reg_lambda: 3.0
+  reg_alpha: 0.1
+  objective: count:poisson
+  eval_metric: rmse
+  tree_method: hist
+  n_jobs: 1
